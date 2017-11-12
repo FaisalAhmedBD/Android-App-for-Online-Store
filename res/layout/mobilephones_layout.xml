@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.faisal.cse_600.mobilephones">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/electronics_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="?attr/colorPrimary"
+
+
+            android:elevation="4dp"
+            android:padding="5dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="62dp"
+            android:text="Json appear here"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/layout_name1"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_below="@+id/electronics_toolbar"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/list_selector"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="The Electronics Store"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="24sp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/swipetext"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/layout_name1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="Swipe right for more"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/toplist"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@+id/swipetext"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="9dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:id="@+id/imageButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/canon"
+                    android:onClick="canoncamera"
+                    android:nestedScrollingEnabled="false" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iphone_poster" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sony_poster" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/apple" />
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/hp_poster" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/infotext"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/toplist"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:padding="5dp"
+            android:text="FEATURED CATAGORIES"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/infotext"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Mobile Phones"
+            android:textColor="#007399"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/infotext"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mybutton"
+            android:onClick="parsrJson"
+            android:text="View All"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:textStyle="bold"
+
+            />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/b2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/year" />
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/line"
+            android:layout_marginLeft="5dp"
+            android:scrollbars="horizontal"
+
+            />
+
+        <View
+            android:id="@+id/linebellow"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/recycler_view"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/year" />
+
+            </RelativeLayout>
+        </ScrollView>

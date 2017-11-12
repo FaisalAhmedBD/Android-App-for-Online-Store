@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.faisal.cse_600.details">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/details_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="?attr/colorPrimary"
+
+        android:elevation="4dp"
+        android:padding="5dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:minHeight="200dp"
+        android:minWidth="200dp"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:visibility="visible"
+        android:id="@+id/d_image"
+       android:layout_below="@+id/details_toolbar"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/d_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="id"
+
+        android:layout_below="@+id/d_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:id="@+id/d_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NAME"
+
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@+id/d_id"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:text="price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:id="@+id/d_price"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/d_name"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+    <TextView
+        android:text="QUANTITY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:id="@+id/d_quantity"
+        android:layout_below="@+id/d_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/buymobile"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:text="BUY"
+       android:textSize="19dp"
+        android:textStyle="bold"
+        android:background="@drawable/mybutton"
+        android:layout_below="@+id/d_quantity"
+        android:onClick="buymobile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="IMAGE NAME"
+        android:id="@+id/d_imagename"
+        android:visibility="invisible"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/d_quantity"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="70dp"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:weightSum="1"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/iconapp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/shopping"
+        android:layout_alignParentLeft="true"
+      android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:textSize="23dp"
+        android:text="Big Bazar"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/apptitle"
+        android:layout_marginTop="25dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_toRightOf="@+id/iconapp"/>
+
+</RelativeLayout>
